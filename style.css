@@ -85,7 +85,7 @@ a
     background-color: rgb(221, 221, 221);
     text-decoration: steelblue; 
 }
-.content, .aboutbg, .cgbg, .hbg
+.content, .aboutbg, .cgbg, .hbg, .vfxbg
 {
     padding: 30px;
     background-color: rgb(255, 255, 255);
@@ -171,8 +171,7 @@ a
         margin-top: 30px;
     }
 }
-vftbg
-h4
+.footbg
 {
     background-color: rgb(255, 255, 255);
     font-size: 24px;
