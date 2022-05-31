@@ -25,7 +25,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <div id="navlist">
                             <ul>
-                                <li class="nav-item h-100"><a href="home.html">Home</a></li>
+                                <li class="nav-item h-100"><a href="index.html">Home</a></li>
                                 <li class="nav-item h-100"><a href="about.html">About</a></li>
                                 <li class="nav-item h-100"><a href="chain_gang.html">Chain Gang</a></li>
                                 <li class="nav-item h-100"><a href="hattrick.html">Hattrick</a></li>
@@ -41,55 +41,64 @@
         <div class="container-fluid">
             <div class="vfxbg">
                 <h2>Visual Effects Library</h2>
-                <div class="row">
-                    <div class="column">
-                        <video 
+                <ul class="vfxList">
+                    <li><video 
                             id="vfx1"
                             class="vfx"
-                            poster="PlasmaSS.png" 
+                            poster="PlasmaSS.png"
+                            preload="auto" 
                             onmouseenter="this.play()" 
                             onmouseout="this.load()" 
                             src="PlasmaTorch.mov" 
-                        >
-                        </video>
+                        ></video>
+                    </li>
+                    <li>
                         <video 
                             id="vfx2"
                             class="vfx"
-                            poster="FlareSS.png" 
+                            poster="FlareSS.png"
+                            preload="auto"  
                             onmouseenter="this.play()" 
                             onmouseout="this.load()" 
                             src="Flare.mov" 
-                        >
-                        </video>
+                        ></video>
+                    </li>
+                    <li>
                         <video 
                             id="vfx3"
                             class="vfx"
                             poster="SporeSS.png" 
+                            preload="auto" 
                             onmouseenter="this.play()" 
                             onmouseout="this.load()" 
                             src="SporeExplosion.mov" 
                         >
                         </video>
+                    </li>
+                    <li>
                         <video 
                             id="vfx4"
                             class="vfx"
                             poster="ConfettiSS.png" 
+                            preload="auto" 
                             onmouseenter="this.play()" 
                             onmouseout="this.load()" 
                             src="Confetti.mov" 
-                        >
-                        </video>
+                        ></video>
+                    </li>
+                    <li>
                         <video 
                             id="vfx5"
                             class="vfx"
                             poster="SparksSS.png" 
+                            preload="auto" 
                             onmouseenter="this.play()" 
                             onmouseout="this.load()" 
                             src="Sparks.mov" 
                         >
                         </video>
-                    </div>
-                </div>
+                    </li>
+                </ul>
                 <div id="vfxTxt">
                     <p>
                         This library is an ongoing repository for various Visual Effects that I've created since getting into it about a year ago. 
