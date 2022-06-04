@@ -56,18 +56,16 @@ header
     margin-bottom: 5px;
     padding-top: 5px;
 }
-nav
-{
-    max-width: 180px;
-    margin: auto;
-    border-radius: 15px;
-    background-color: steelblue;
-}
 .navbg
 {
     margin-top: 10px;
-    padding-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
+    border: steelblue 3px solid;
 }
 a
 {
@@ -75,35 +73,73 @@ a
     text-decoration: none;
     color: rgb(29, 29, 29);
 }
-#navbarNav
+nav
 {
-    margin-top: 5px;
-}
-#navbarNav a
-{
-    border: 2px solid rgb(0, 51, 128);
     display: flex;
-    justify-content: center;
-    background-color: rgb(177, 177, 177);
-    margin-top: 2px;
-    transition-duration: .2s;
 }
-#navbarNav a:hover
+nav div
 {
-    background-color: rgb(221, 221, 221);
-    text-decoration: steelblue; 
+    flex: 20%;
+    text-align: center;
 }
-.content, .aboutbg, .cgbg, .hbg, .vfxbg
+nav a
+{   
+    
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 51, 128);
+    border: rgb(177, 177, 177) solid 2px;
+    border-radius: 30px;
+    font-size: 1.1vw;
+    color: white;
+}
+nav a:hover
+{
+    background-color: rgb(0, 84, 210);
+    color: white;
+    text-decoration: underline;
+}
+main, footer
+{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.container-fluid
+{
+    padding: 0;
+}
+main .container-fluid
+{
+    border-top: steelblue 3px solid;
+    border-right: steelblue 3px solid;
+    border-left: steelblue 3px solid;
+}
+footer .container-fluid
+{
+    border-bottom: steelblue 3px solid;
+    border-right: steelblue 3px solid;
+    border-left: steelblue 3px solid;
+}
+.content
 {
     padding: 30px;
     background-color: rgb(255, 255, 255);
 }
-#projects, #cgPics, #hpics, .vfxList
+.aboutbg, .cgbg, .hbg, .vfxbg, .badbg
+{
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+#projects, #cgPics, #hpics, .vfxList, #badpics
 {
     display: flex;
     padding-top: 20px;
 }
-#projects li, #cgPics li, #hpics li
+#projects li, #cgPics li, #hpics li, #badpics li
 {
     flex: 30%;
     text-align: center;
@@ -118,10 +154,25 @@ a
     max-width: 80%; 
     max-height: 80%;
 }
-#cgPics img, #hpics img
+#cgPics video, #hpics video
+{
+    max-width: 91%;
+    max-height: 91%;
+}
+#cgPics img, #hpics img, #badpics img, #badpics video
 {
     max-width: 95%;
     max-height: 95%;
+}
+.mini-about
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 20;
 }
 #about
 {
@@ -131,7 +182,19 @@ a
     margin-left: 80px;
     margin-right: 80px;
 }
-
+.content h2, .aboutbg h2, .cgbg h2, .hbg h2, .vfxbg h2, .badbg h2
+{
+    display: block;
+    text-align: center;
+    border: rgb(177, 177, 177) solid 2px;
+    color: white;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: steelblue
+}
 .aboutImg
 {
     flex: 1;
@@ -141,7 +204,6 @@ a
     max-height: 100%;
     max-width: 100%;
 }
-
 .aboutTxt
 {
     flex: 2;
@@ -151,6 +213,36 @@ a
 {
     max-height: 100%;
     max-width: 100%;
+    font-size: 16px;
+}
+.general, .details
+{
+    font-size: 18px;
+}
+.details
+{
+    border-bottom: steelblue dotted 2px;;
+}
+.skills, .dooties
+{
+    margin-left: 50px;
+}
+.vfxTxt, .details, .gameSummary
+{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.gameSummary h4
+{
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.gameSummary p
+{
+    margin-left: 30px;
 }
 @media (max-width: 1200px)
 {
@@ -172,7 +264,23 @@ a
         margin-top: 30px;
     }
 }
-
+.dooties
+{
+    list-style: circle;
+}
+.gameInfo
+{
+    padding: 5px;
+    color: white;
+    background-color: rgb(0, 51, 128);
+    border: rgb(177, 177, 177) 2px solid;
+}
+.gameInfo:hover
+{
+    background-color: rgb(0, 84, 210);
+    color: white;
+    text-decoration: underline;
+}
 #vfxTxt
 {
     font-size: 18px;
